@@ -16,8 +16,8 @@ function ProjectCard({ project, index }) {
                 <p className="project-card-title">{project.name}</p>
                 <p className="project-card-desc">{project.desc}</p>
                 <div className="project-link-cont flex">
-                    <a href={project.demo} className="project-link project-link-1">Live Demo</a>
-                    <a href={project.gh} className="project-link project-link-2">See code</a>
+                    <a href={project.demo} target='_blank' className="project-link project-link-1">Live Demo</a>
+                    <a href={project.gh} target='_blank' className="project-link project-link-2">See code</a>
                 </div>
             </Tilt>
         </motion.div>
