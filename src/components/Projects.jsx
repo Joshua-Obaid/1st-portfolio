@@ -16,8 +16,8 @@ function ProjectCard({ project, index }) {
                 <p className="project-card-title">{project.name}</p>
                 <p className="project-card-desc">{project.desc}</p>
                 <div className="project-link-cont flex">
-                    <a href="" className="project-link project-link-1">Live Demo</a>
-                    <a href="" className="project-link project-link-2">See code</a>
+                    <a href={project.demo} className="project-link project-link-1">Live Demo</a>
+                    <a href={project.gh} className="project-link project-link-2">See code</a>
                 </div>
             </Tilt>
         </motion.div>
@@ -28,16 +28,22 @@ function Projects() {
     const projectArray = [
         {
             name: 'Netflix clone',
-            desc: 'This is a front-end netflix clone which was made using react technologies namely, react-router, react compound components and styled components.It was developed as part of a scrimba course.'
+            desc: 'This is a front-end netflix clone which was made using react technologies namely, react-router, react compound components and styled components.It was developed as part of a scrimba course.',
+            demo:'https://netflix-frontend-clone-ebon.vercel.app/',
+            gh:'https://github.com/Joshua-Obaid/netflix-clone'
         },
         {
             name: 'Cryptocurrency web app',
             desc: 'This is cryptocurrency web app that can show the prices of 40 cryptocurrencies fetched from the popular coin gecko api.It mainly uses react and react-router-dom. '
+            ,demo:'https://crypto-coin-seven.vercel.app/',
+            gh:'https://github.com/Joshua-Obaid/crypto-coin'
         }
         ,
         {
             name: 'E-commerce site',
-            desc: 'This is a front-end e-commerce site which displays numerous items and allows us to add them to cart and remove them. It is made by react and react-router-dom   '
+            desc: 'This is a front-end e-commerce site which displays numerous items and allows us to add them to cart and remove them. It is made by react and react-router-dom   ',
+            demo:'https://e-commerce-git-main-joshua-obaid.vercel.app/',
+            gh:'https://github.com/Joshua-Obaid/e-commerce'
         }
     ]
     return (
