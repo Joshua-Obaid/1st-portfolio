@@ -452,6 +452,7 @@ a {
 .contact-cont{
   flex-direction: column-reverse;
   margin: 4.325em 0 ;
+  width: 100%;
 }
 .contacts{
   background-color:#100D25;
